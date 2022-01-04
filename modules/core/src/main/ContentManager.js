@@ -22,8 +22,8 @@ export async function decryptText(jwe, privateKey) {
 export async function encryptTextForDID(text, did) {
     const response = await getDidDoc(did);
 
-    const rsaPublicKey = await jose.importJWK(response.didDocument.verificationMethod[0].publicKeyJwk, ALGORITHM)
+    const publicKey = await jose.importJWK(response.didDocument.verificationMethod[0].publicKeyJwk, ALGORITHM)
 
-    const jwe = await encryptText(rsaPublicKey, text);
+    const jwe = await encryptText(publicKey, text);
     return jwe;
 }

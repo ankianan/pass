@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .row, legend {
+            margin-bottom: 20px;
+        }
+
+        .label{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: stretch;
+        }
+
+        .label .label-text{
+            display: inline-block;
+            min-width: 100px;
+            max-width: 100px;
+            width: 100px;
+        }
+
+        .label .label-node{
+            max-width: 100%;
+            width: 100%;
+        }
+        .form{
+            display: none;
+        }
+        .form.show{
+            display: block;
+        }
+    </style>
+</head>
+<body style="width: 500px; background: rgb(252, 251, 250)">
+<fieldset>
+    <legend>
+        <label><input type="radio" name="opt" data-for="create-account-form" checked="checked"> Create Account</label>
+        <label><input type="radio" name="opt" data-for="encryption-form" > Encryption</label>
+        <label><input type="radio" name="opt" data-for="decryption-form"> Decryption</label>
+    </legend>
+
+    <form autocomplete="off" class="form" id="encryption-form" >
+        <label class="label row">
+            <span class="label-text">DID: </span>
+            <input class="label-node" name="did">
+        </label>
+        <label class="label row">
+            <span class="label-text">Content: </span>
+            <textarea class="label-node" cols="50" rows="10" name="input"></textarea>
+        </label>
+        <input type="button" id="encryptButton" value="Encrypt">
+    </form>
+
+    <form autocomplete="off" class="form" id="create-account-form">
+        <label class="label row">
+            <span class="label-text">DID: </span>
+            <input class="label-node" name="did">
+        </label>
+        <input type="button" id="createButton" value="Create">
+    </form>
+
+    <form autocomplete="off" class="form" id="decryption-form">
+        <label class="label row">
+            <span class="label-text">Content: </span>
+            <textarea class="label-node" cols="50" rows="10" name="input"></textarea>
+        </label>
+        <input type="button" id="decryptButton" value="Decrypt">
+    </form>
+</fieldset>
+<script src="./node_modules/@decentralized-identity/ion-tools/dist/ion.min.js" type="module" defer></script>
+<script type="module" src="popup.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "@pass/browser-extention",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@pass/core": "1.0.0"
+  }
+}

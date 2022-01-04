@@ -1,16 +1,17 @@
 import * as jose from 'jose';
 import {ALGORITHM} from "./Constants";
 
-export default class Wallet{
-    constructor(privateKey, did) {
+export default class AccountManager {
+    constructor(did, privateKey) {
+        this.did = did;
         this.privateKey = privateKey;
-        this.did = did
     }
 
     static async create(){
         const {publicKey, privateKey} = await jose.generateKeyPair(ALGORITHM)
 
         const publicKeyJwk = await jose.exportJWK(publicKey);
+
 
         let did = new ION.DID({
             content: {
@@ -32,6 +33,6 @@ export default class Wallet{
             }
         });
 
-        return new Wallet(privateKey, did);
+        return new AccountManager(await did.getURI(), privateKey);
     }
 }

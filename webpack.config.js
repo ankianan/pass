@@ -1,10 +1,12 @@
 const path = require("path");
 module.exports = {
-  entry: './src/main/index.js',
-  output: {
-    filename: 'index.js',
-    path: path.resolve(__dirname, 'dist'),
+  entry: {
+    'dist/standalone/index': './modules/core/src/test/standalone/index.js',
+    'modules/browser-extension/popup/popup': './modules/browser-extension/src/main/popup/popup.js'
   },
-  mode: "development",
+  output: {
+    path: path.resolve(__dirname),
+  },
+  //mode: "development",
   watch: true
 };

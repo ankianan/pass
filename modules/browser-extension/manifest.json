@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "Pass",
+  "version": "1.4",
+
+  "description": "Encrypt/decrypt the content on clipboard",
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://localhost/*"],
+      "js": ["extension.js"]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/icon-38.png",
+    "default_title": "Pass",
+    "default_popup": "popup/popup.html"
+  }
+
+}
