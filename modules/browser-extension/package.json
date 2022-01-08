@@ -5,5 +5,8 @@
   "license": "MIT",
   "dependencies": {
     "@pass/core": "1.0.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^10.2.0"
   }
 }

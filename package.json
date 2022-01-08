@@ -12,7 +12,7 @@
     "build": "npx webpack --config webpack.config.js"
   },
   "private": true,
-  "workspaces": ["modules/core", "modules/browser-extention"],
+  "workspaces": ["modules/core", "modules/browser-extension"],
   "repository": "https://github.com/ankit90anand/pass.git",
   "author": "Ankit Anand <ankit.anand@oracle.com>"
 }
