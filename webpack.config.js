@@ -5,7 +5,8 @@ module.exports = {
   entry: {
     'standalone/index': './modules/core/src/test/standalone/index.js',
     'browser-extension/popup/popup': './modules/browser-extension/src/main/popup/popup.js',
-    'browser-extension/background': './modules/browser-extension/src/main/background.js'
+    'browser-extension/background': './modules/browser-extension/src/main/background.js',
+    'browser-extension/extension': './modules/browser-extension/src/main/extension.js'
   },
   output: {
     path: path.resolve(__dirname, "dist"),

@@ -1,9 +1,9 @@
 import {getBrowser} from "../helper/crossBrowser";
 
-export function init() {
+export function init(name) {
     let callbackQueue = [];
     const port = getBrowser().runtime.connect({
-        name: "Popup conn"
+        name: name
     });
     port.onMessage.addListener(function (state) {
         const pop = callbackQueue.pop();

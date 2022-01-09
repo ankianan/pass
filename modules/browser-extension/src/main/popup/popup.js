@@ -1,7 +1,7 @@
 import messageTypes from "../messages/messageTypes";
-import {init} from "./popupConn";
+import {init} from "../helper/conn";
 
-let conn = init();
+let conn = init("Popup conn");
 
 conn.postMessage({
     "type": messageTypes.INIT,
@@ -37,7 +37,7 @@ document.getElementById("encryptButton").addEventListener('click', async functio
             did: did.value
         }
     }).then(function (state){
-        input.value = state.encryptedMessageQueue.pop().value;
+        input.value = state.encryptedMessage;
     });
 
 });
@@ -50,7 +50,7 @@ document.getElementById("decryptButton").addEventListener('click', async functio
             input: input.value
         }
     }).then(function (state){
-        input.value = state.decryptedMessageQueue.pop().value;
+        input.value = state.decryptedMessage;
     })
 
 });

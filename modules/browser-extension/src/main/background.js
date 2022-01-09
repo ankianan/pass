@@ -12,8 +12,8 @@ let account;
  */
 let state = {
     account: {},
-    decryptedMessageQueue: [],
-    encryptedMessageQueue: []
+    decryptedMessage: "",
+    encryptedMessage: ""
 }
 
 getBrowser().runtime.onConnect.addListener(function (port){
@@ -29,14 +29,15 @@ getBrowser().runtime.onConnect.addListener(function (port){
                 state.account.did = account.did;
             }
         } else if(msg.type === messageTypes.DECRYPT_TEXT){
-            state.decryptedMessageQueue.unshift({
-                value: await decryptText(msg.payload.input, account.privateKey)
-            })
+            try {
+                state.decryptedMessage = await decryptText(msg.payload.input, account.privateKey)
+            }catch (e){
+                state.decryptedMessage = "Can't be decrypted";
+            }
+
         } else if(msg.type === messageTypes.ENCRYPT_TEXT){
             const {input, did} = msg.payload;
-            state.encryptedMessageQueue.unshift({
-                value: await encryptTextForDID(input, did)
-            });
+            state.encryptedMessage = await encryptTextForDID(input, did)
         }
 
         port.postMessage(state);
