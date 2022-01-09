@@ -1,5 +1,6 @@
 import * as jose from 'jose';
 import {ALGORITHM} from "./Constants";
+import ION from "@decentralized-identity/ion-tools";
 
 export default class AccountManager {
     constructor(did, privateKey) {

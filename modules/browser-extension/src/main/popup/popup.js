@@ -1,27 +1,58 @@
-import {encryptTextForDID, decryptText} from "@pass/core/src/main/ContentManager";
-import AccountManager from "@pass/core/src/main/AccontManager";
+import messageTypes from "../messages/messageTypes";
+import {init} from "./popupConn";
+
+let conn = init();
+
+conn.postMessage({
+    "type": messageTypes.INIT,
+    payload: {}
+}).then(function (state){
+    if(state.account.did){
+        const did = document.getElementById('create-account-form').elements.did;
+        did.value = state.account.did;
+    }
+});
 
 
-let account = null
+document.getElementById("createButton").addEventListener('click', async function (event) {
+
+    conn.postMessage({
+        "type": messageTypes.CREATE
+    }).then(function (state){
+        const did = document.getElementById('create-account-form').elements.did;
+        did.value = state.account.did;
+    })
+
+});
 
 document.getElementById("encryptButton").addEventListener('click', async function (event) {
     const $encryption = document.getElementById('encryption-form');
     const did = $encryption.elements.did;
-    const input = $encryption.elements.input
-    input.value = await encryptTextForDID(input.value, did.value);
-});
+    const input = $encryption.elements.input;
 
-document.getElementById("createButton").addEventListener('click', async function (event) {
-    if(!account){
-        account = await AccountManager.create();
-        const did = document.getElementById('create-account-form').elements.did;
-        did.value = account.did;
-    }
+    conn.postMessage({
+        "type": messageTypes.ENCRYPT_TEXT,
+        payload: {
+            input: input.value,
+            did: did.value
+        }
+    }).then(function (state){
+        input.value = state.encryptedMessageQueue.pop().value;
+    });
+
 });
 
 document.getElementById("decryptButton").addEventListener('click', async function (event) {
     const input = document.getElementById("decryption-form").elements.input;
-    input.value = await decryptText(input.value, account.privateKey);
+    conn.postMessage({
+        "type": messageTypes.DECRYPT_TEXT,
+        payload: {
+            input: input.value
+        }
+    }).then(function (state){
+        input.value = state.decryptedMessageQueue.pop().value;
+    })
+
 });
 
 function onChange(){

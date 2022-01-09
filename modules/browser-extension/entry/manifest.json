@@ -21,6 +21,10 @@
     "default_icon": "icons/icon-38.png",
     "default_title": "Pass",
     "default_popup": "popup/popup.html"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
   }
 
 }
