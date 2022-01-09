@@ -1,5 +1,8 @@
 # Pass
 
+### Introduction
+Allow you to share content safely among set of users.
+
 ### Technologies
 * ION (DID) : https://github.com/decentralized-identity/ion-tools
 * JOSE (Encryptiom): https://github.com/panva/jose
