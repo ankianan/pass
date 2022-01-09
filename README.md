@@ -15,7 +15,8 @@
 - Run `http-server`
 - Import `dist/browser-extension`
 
-### Demo snapshot
-![image](https://user-images.githubusercontent.com/4686410/147509358-0d215325-25e6-4f55-8839-56e09645bf42.png)
+### Demos
 
-![Watch the video][https://drive.google.com/file/d/1aa7MP4kAgimkCQofe3Y4XezseBSbJH5b/view?usp=sharing]
+[![image](https://user-images.githubusercontent.com/4686410/148703377-75cf29a9-49d2-46e2-8728-02ea954b0ced.png)](https://drive.google.com/file/d/1aa7MP4kAgimkCQofe3Y4XezseBSbJH5b/view?usp=sharing)
+
+![image](https://user-images.githubusercontent.com/4686410/147509358-0d215325-25e6-4f55-8839-56e09645bf42.png)
