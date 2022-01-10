@@ -17,3 +17,13 @@
 ### Demo
 
 [![Watch the video](https://user-images.githubusercontent.com/4686410/148703377-75cf29a9-49d2-46e2-8728-02ea954b0ced.png)](https://drive.google.com/file/d/1aa7MP4kAgimkCQofe3Y4XezseBSbJH5b/view?usp=sharing)
+
+### FAQ
+- Use case 
+  - A Facebook, which is end-to-end encrypted. That allow you to actually share content only with selected people (excluding even Facebook).
+- Isn’t it is same as WhatsApp? 
+  - No, WhatsApp  doesn’t have advance social networking features like memory, likes, comments etc..
+- What is the objective?  
+  - The give back user control of their data and let them decide with whom to share.
+- Which other mediums can be target?  
+  - Any collaboration medium
