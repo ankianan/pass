@@ -2,7 +2,7 @@
 
 ### Technologies
 * ION (DID) : https://github.com/decentralized-identity/ion-tools
-* JOSE (Encryptiom): https://github.com/panva/jose
+* JOSE (Encryption/ Decryption): https://github.com/panva/jose
 
 ### Install
 
