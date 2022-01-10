@@ -26,4 +26,4 @@
 - What is the objective?  
   - To give back user control of their data and let them decide with whom to share.
 - Which other mediums can be target?  
-  - Any collaboration medium
+  - Any collaboration medium (Insta, Github) that needs data to be shared among set of people.
