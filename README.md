@@ -21,9 +21,9 @@
 ### FAQ
 - Use case 
   - A Facebook, which is end-to-end encrypted. That allow you to actually share content only with selected people (excluding even Facebook).
+    - Isn’t it is same as WhatsApp? 
+      - No, WhatsApp  doesn’t have advance social networking features like memory, likes, comments etc. We want to re-use existing platform capabilities but just make the data exchange more safer.
   - Paid content, good for montezing open source work by developer.
-- Isn’t it is same as WhatsApp? 
-  - No, WhatsApp  doesn’t have advance social networking features like memory, likes, comments etc. We want to re-use existing platform capabilities but just make the data exchange more safer.
 - What is the objective?  
   - To give back user control of their data and let them decide with whom to share.
 - Which other mediums can be target?  
