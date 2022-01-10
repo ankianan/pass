@@ -7,7 +7,6 @@
 ### Install
 
 - Run `yarn`
-- Build ION as per https://github.com/decentralized-identity/ion-tools
 
 ### Test
 
