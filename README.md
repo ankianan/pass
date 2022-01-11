@@ -1,5 +1,7 @@
 # Pass
 
+Is a tool to safely share content among set of people. It uses DID to restrict content access.
+
 ### Technologies
 * ION (DID) : https://github.com/decentralized-identity/ion-tools
 * JOSE (Encryption/ Decryption): https://github.com/panva/jose
