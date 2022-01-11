@@ -31,3 +31,10 @@
   - To give back user control of their data and let them decide with whom to share.
 - Which other mediums can be target?  
   - Any collaboration medium (Insta, Github) that needs data to be shared among set of people.
+
+
+### Todos
+- Allow encrypt/decrypt capability for both browser/cli content gateways.
+- Allow user to login from multiple devices.
+- Allow encryption for more than one DID.
+- Allow referring group of target DIDs.
