@@ -20,6 +20,17 @@ Is a tool to safely share content among set of people. It uses DID to restrict c
 
 [![Watch the video](https://user-images.githubusercontent.com/4686410/148703377-75cf29a9-49d2-46e2-8728-02ea954b0ced.png)](https://drive.google.com/file/d/1aa7MP4kAgimkCQofe3Y4XezseBSbJH5b/view?usp=sharing)
 
+### Architecture
+- Wallet: A key manager, that stores private/public key pair per identity per consumer.
+  - Maintains a public endpoint to search set of registerd DIDs by user name   
+- Identtiy: Each DID is an identity. 
+  - One might want to maintain different identity on facebook and github.
+- Consumer: That encrypts/decrypt the content for set of users:
+  - Can be browser extention, a CLI library or a dedicated App
+
+
+https://app.diagrams.net/#DPass%20architecture
+
 ### FAQ
 - Use case 
   - Prevent hack
