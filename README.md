@@ -29,7 +29,8 @@ Is a tool to safely share content among set of people. It uses DID to restrict c
   - Can be browser extention, a CLI library or a dedicated App
 
 
-https://app.diagrams.net/#DPass%20architecture
+![image](https://user-images.githubusercontent.com/4686410/149637389-e5ef518b-2f34-4aac-8b35-077ccf550a31.png)
+
 
 ### FAQ
 - Use case 
