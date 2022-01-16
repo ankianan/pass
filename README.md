@@ -40,8 +40,7 @@ https://app.diagrams.net/#DPass%20architecture
   - Prevent hack
     - A Facebook, which is end-to-end encrypted. That allow you to actually share content only with selected people (excluding even Facebook).
       - Isn’t it is same as WhatsApp? 
-        - No, WhatsApp  doesn’t have advance social networking features like memory, likes, comments etc. 
-        - We want to re-use existing platform capabilities but just make the data exchange more safer.
+        - Yes, but WhatsApp encryption only works within WhatsApp and is not available to other platforms outside it.
   - Paid content
     - A GitHub repo hosting encrypted content restricting access to set of user or corporates. Good for montezing open source work by developer.
 - What is the objective?  
