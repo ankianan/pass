@@ -25,11 +25,14 @@ Is a tool to safely share content among set of people. It uses DID to restrict c
   - Maintains a public endpoint to search set of registerd DIDs by user name   
 - Identtiy: Each DID is an identity. 
   - One might want to maintain different identity on facebook and github.
-- Consumer: That encrypts/decrypt the content for set of users:
+- Consumer: Component encrypts/decrypt the content for set of users:
   - Can be browser extention, a CLI library or a dedicated App
+- Relay: Component that allow consumer and wallet to communicate.
 
 
-![image](https://user-images.githubusercontent.com/4686410/149637389-e5ef518b-2f34-4aac-8b35-077ccf550a31.png)
+![image](https://user-images.githubusercontent.com/4686410/149643355-20ee0263-f21e-47d3-94f4-3a5bc8fa07cf.png)
+https://app.diagrams.net/#DPass%20architecture
+
 
 
 ### FAQ
