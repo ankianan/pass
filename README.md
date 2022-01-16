@@ -39,7 +39,7 @@ https://app.diagrams.net/#DPass%20architecture
 - Use case 
   - Prevent hack
     - A Facebook, which is end-to-end encrypted. That allow you to actually share content only with selected people (excluding even Facebook).
-      - Isn’t it is same as WhatsApp? 
+      - Isn’t it is same as WhatsApp end-to-end encrypted chat? 
         - Yes, but WhatsApp encryption only works within WhatsApp and is not available to other platforms outside it.
   - Paid content
     - A GitHub repo hosting encrypted content restricting access to set of user or corporates. Good for montezing open source work by developer.
