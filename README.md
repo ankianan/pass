@@ -23,7 +23,7 @@ Is a tool to safely share content among set of people. It uses DID to restrict c
 ### Architecture
 - Wallet: A key manager, that stores private/public key pair per identity per consumer.
   - Maintains a public endpoint to search set of registerd DIDs by user name   
-- Identtiy: Each DID is an identity. 
+- Identity: Each DID is an identity. 
   - One might want to maintain different identity on facebook and github.
 - Consumer: Component encrypts/decrypt the content for set of users:
   - Can be browser extention, a CLI library or a dedicated App
